@@ -46,8 +46,8 @@ rbtn1.addEventListener("click", function(){            // US Customary unit butt
 
     if(heightunit1.innerText === "CM"){                                 // if 1 means the code inside this if will run only when the unit are set to metric that is cm and kg.
         console.log("Form is submitted"); 
-    const height = document.getElementsByClassName("height").value ;            // here i learn how get value from input
-    const weight = document.getElementsByClassName("weight").value; 
+    const height = document.querySelector(".height").value ;            // here i learn how get value from input
+    const weight = document.querySelector(".weight").value; 
     const results = document.getElementById("results");
 
     
@@ -75,8 +75,8 @@ rbtn1.addEventListener("click", function(){            // US Customary unit butt
     }
 
     if(heightunit1.innerText === "feet"){                                      
-        const height = parseFloat(document.getElementsByClassName("height").value) ;            // here i learn how get value from input
-        const weight = document.getElementsByClassName("weight").value;                          
+        const height = parseFloat(document.querySelector(".height").value) ;            // here i learn how get value from input
+        const weight = document.querySelector(".weight").value;                          
         const hivalue = parseFloat(document.getElementById("inputid").value);
         const results = document.getElementById("results");
   
@@ -148,3 +148,4 @@ resetbtn.addEventListener("click", function(){
 //     }
 
 // })
+
